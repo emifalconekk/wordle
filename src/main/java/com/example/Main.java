@@ -5,6 +5,9 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         logic game = new logic();
-        game.gameOrchestrator();
+        game.loadWords(logic.lawords, game.lawordslist);
+        game.loadWords(logic.tawords, game.tawordslist);
+
+        game.solverOrchestrator();
     }
 }
